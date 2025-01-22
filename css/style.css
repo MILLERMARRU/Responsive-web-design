@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary : #62bd62;
+    --secondary : #d4de9a;
+    --white : #efefef;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--primary);
+}
+
+#main {
+    background-image: url("../img/main.png");
+    min-height: 60vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#main .container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+nav .nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.nav-list a:hover{
+    color: var(--secondary);
+}
+
+.btn{
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-list .btn-secondary{
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.container .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    color: var(--white);
+}
+
+.main-content .intro-heading{
+    font-size: 40px;
+    margin-top: 45px;
+}
+
+.main-content .main-heding{
+    font-size: 55px;
+    margin-top: 20px
+}
+
+.main-content p{
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.main-content .btn-primary{
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    margin-top: 15px;
+}
+.menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 30px;
+}
+@media screen and (max-width: 520px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 80%;
+        height: 100vh;
+        padding: 80px 0 0 0;
+        transition: all 0.3s ease;
+    }
+    .nav-list.active{
+        right: 0;
+    }
+    .nav-list li:not(:last-child){
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }
+}

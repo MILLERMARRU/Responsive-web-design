@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive web design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="main">
+        <div class="container">
+            <nav>
+                <img src="./img/logo.png" alt="" class="logo">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <button class="btn btn-secondary">202-505-3333</button>
+                    </li>
+                </ul>
+                <img src="./img/menu.svg" alt="" class="menu-btn">
+            </nav>
+
+            <div class="main-content">
+                <h1 class="intro-heading">Well all love</h1>
+                <h1 class="main-heding">nature</h1>
+                <p>look deep into nature, and you will understand everything better.</p>
+                <button class="btn btn-primary">Learn more</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Services</h1>
+                <div class="line"></div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img src="./img/service-1.png" alt="">
+                    <h3>Web Design</h3>
+                    <p>
+                        Focus on how you cal help and benefit your user. Use simple words
+                        so that you don´t confuse people.
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="./img/service-2.png" alt="">
+                    <h3>Graphic Design</h3>
+                    <p>
+
+                    </p>
+                </div>
+
+                <div class="service">
+                    <img src="./img/service-3.png" alt="">
+                    <h3>Content Creation </h3>
+                    <p>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="container">
+            <img src="./img/quote.png" alt="">
+            <h1>
+                "Original and with an innate understanding of their customer's needs,
+                the team delivers a top-notch service."
+            </h1>
+            <div class="profile">
+                <img src="./img/profile.png" alt="">
+                <h4>Miller Marru</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <h4>Our Story</h4>
+                <h1>Tell website visitors who you are and why they should choose your business.</h1>
+                <p>
+                    Because when a visitor comes to your website,
+                    they want to know why they should choose your business.
+                </p>
+                <button class="btn btn-primary">
+                    Let's talk Now
+                </button>
+            </div>
+
+            <div class="about-image">
+                <img src="./img/about.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="questions">
+        <div class="container">
+            <h1>QUESTIONS</h1>
+            <p>
+                We are here to help you with any questions you may have.
+                Please don´t hesitate to reach out to us.
+            </p>
+            <button class="btn btn-primary">
+                Let´s talk Now
+            </button>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="./img/logo-colored.png" alt="" class="footerLogo">
+            <p>
+                Love Nature by Tyler Moore
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-list');
+        navBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
